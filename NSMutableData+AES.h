@@ -8,21 +8,21 @@
 @interface NSMutableData(AES)
 
 /**
- *    Metodo per criptare in AES 128 l'oggetto NSMutableData.
+ *    Crypt NSMutableData using AES 128.
  *
- *    @param key La chiave con cui eseguire la criptazione.
+ *    @param key The key.
  *
- *    @return L'oggetto criptato.
+ *    @return The crypted object.
  */
-
 - (NSMutableData *)encryptAES:(NSString *)key;
+
 /**
- *    Metodo per decriptare un oggetto criptato con algoritmo AES 128.
+ *    Decrypt NSMutableData using AES 128.
  *
- *    @param key              La chiave con cui è stato criptato l'oggetto.
- *    @param objencryptedData L'oggetto criptato.
+ *    @param key              The key.
+ *    @param objencryptedData The crypted object.
  *
- *    @return Il valore decriptato.
+ *    @return The decrypted object.
  */
 - (NSMutableData *)decryptAES:(NSString*)key andForData:(NSMutableData *)objencryptedData;
 
